@@ -1,0 +1,96 @@
+/* ==========================================================================
+   1. Réinitialisation et variables (Couleurs & Polices)
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f8f9fa; /* Blanc cassé très doux */
+  color: #2d3748; /* Gris anthracite (plus doux que le noir pur) */
+  line-height: 1.6;
+  padding: 2rem 1rem;
+}
+
+/* ==========================================================================
+   2. Structure principale (Conteneur global)
+   ========================================================================== */
+header, main, footer {
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+/* ==========================================================================
+   3. Header (En-tête)
+   ========================================================================== */
+header {
+  border-bottom: 3px solid #4a5568; /* Petite ligne sobre pour souligner le titre */
+  padding-bottom: 1.5rem;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1a202c;
+  letter-spacing: -0.05em;
+}
+
+/* ==========================================================================
+   4. Main (Contenu principal)
+   ========================================================================== */
+main h2 {
+  font-size: 1.4rem;
+  color: #4a5568;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+main p {
+  font-size: 1rem;
+  color: #718096; /* Texte d'explication légèrement plus clair */
+  margin-bottom: 2rem;
+}
+
+main h3 {
+  font-size: 1.2rem;
+  color: #2d3748;
+  margin-bottom: 1rem;
+  border-left: 4px solid #cbd5e0; /* Repère visuel élégant à gauche du titre de la carte */
+  padding-left: 0.75rem;
+}
+
+/* Style de l'image (Ta carte) */
+main img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; /* Petit effet au survol */
+}
+
+main img:hover {
+  transform: scale(1.01); /* Zoom très léger et élégant au survol */
+}
+
+/* ==========================================================================
+   5. Footer (Pied de page)
+   ========================================================================== */
+footer {
+  background: transparent; /* Pas de fond blanc pour le footer, plus sobre */
+  box-shadow: none;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer p {
+  font-size: 0.85rem;
+  color: #a0aec0;
+}
