@@ -10,7 +10,7 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   background-color: #f8f9fa; /* Blanc cassé très doux */
-  color: #2d3748; /* Gris anthracite (plus doux que le noir pur) */
+  color: #2d3748; /* Gris anthracite */
   line-height: 1.6;
   padding: 2rem 1rem;
 }
@@ -28,18 +28,40 @@ header, main, footer {
 }
 
 /* ==========================================================================
-   3. Header (En-tête)
+   3. Header (En-tête aligné à gauche et à droite)
    ========================================================================== */
 header {
-  border-bottom: 3px solid #4a5568; /* Petite ligne sobre pour souligner le titre */
-  padding-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between; /* Aligne le titre à gauche et les contacts à droite */
+  align-items: center; /* Centre verticalement les éléments */
+  flex-wrap: wrap; /* Permet de s'adapter proprement sur les téléphones */
+  gap: 1rem;
 }
 
 header h1 {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: #1a202c;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.03em;
+}
+
+.header-contact {
+  display: flex;
+  flex-direction: column; /* Aligne l'email au-dessus de LinkedIn */
+  align-items: flex-end; /* Aligne le texte vers la droite */
+  gap: 0.25rem;
+}
+
+.header-contact a {
+  color: #4a5568;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.header-contact a:hover {
+  color: #3182ce; /* Les liens deviennent bleus discrets au survol */
+  text-decoration: underline;
 }
 
 /* ==========================================================================
@@ -54,7 +76,7 @@ main h2 {
 
 main p {
   font-size: 1rem;
-  color: #718096; /* Texte d'explication légèrement plus clair */
+  color: #718096;
   margin-bottom: 2rem;
 }
 
@@ -62,29 +84,29 @@ main h3 {
   font-size: 1.2rem;
   color: #2d3748;
   margin-bottom: 1rem;
-  border-left: 4px solid #cbd5e0; /* Repère visuel élégant à gauche du titre de la carte */
+  border-left: 4px solid #cbd5e0; /* Repère visuel sobre à gauche */
   padding-left: 0.75rem;
 }
 
-/* Style de l'image (Ta carte) */
+/* Style de l'image */
 main img {
   display: block;
   max-width: 100%;
   height: auto;
   border-radius: 6px;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease; /* Petit effet au survol */
+  transition: transform 0.3s ease;
 }
 
 main img:hover {
-  transform: scale(1.01); /* Zoom très léger et élégant au survol */
+  transform: scale(1.01);
 }
 
 /* ==========================================================================
    5. Footer (Pied de page)
    ========================================================================== */
 footer {
-  background: transparent; /* Pas de fond blanc pour le footer, plus sobre */
+  background: transparent;
   box-shadow: none;
   text-align: center;
   padding: 1rem 0;
