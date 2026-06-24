@@ -41,7 +41,7 @@ header {
 header h1 {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #1a202c;
+  color: #10375d;
   letter-spacing: -0.03em;
 }
 
@@ -53,7 +53,7 @@ header h1 {
 }
 
 .header-contact a {
-  color: #4a5568;
+  color: #10375d;
   text-decoration: none;
   font-size: 0.95rem;
   transition: color 0.2s ease;
@@ -69,22 +69,22 @@ header h1 {
    ========================================================================== */
 main h2 {
   font-size: 1.4rem;
-  color: #4a5568;
+  color: #10375d;
   margin-bottom: 0.5rem;
   font-weight: 600;
 }
 
 main p {
   font-size: 1rem;
-  color: #718096;
+  color: #10375d;
   margin-bottom: 2rem;
 }
 
 main h3 {
   font-size: 1.2rem;
-  color: #2d3748;
+  color: #10375d;
   margin-bottom: 1rem;
-  border-left: 4px solid #cbd5e0; /* Repère visuel sobre à gauche */
+  /*border-left: 4px solid #cbd5e0; /* Repère visuel sobre à gauche */
   padding-left: 0.75rem;
   padding-top: 1rem;
 }
