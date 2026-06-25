@@ -101,8 +101,10 @@ main img {
 
 main embed {
   display: block;
-  width: auto;
-  height: auto;
+  width: 100%;          
+  height: 600px;        
+  border-radius: 6px;   
+  border: none;        
 }
 
 main img:hover {
